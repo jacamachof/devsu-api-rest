@@ -1,0 +1,440 @@
+{
+	"info": {
+		"_postman_id": "db174039-c808-445d-8e64-e3c272af08f7",
+		"name": "Devsu API Rest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "/clientes/actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identification\": \"V26078218\",\r\n    \"name\": \"Joaquin Camacho\",\r\n    \"address\": \"Caracas, Venezuela\",\r\n    \"phoneNumber\": \"142874557\",\r\n    \"gender\": \"Masculino\",\r\n    \"birthdate\": \"1996-02-01\",\r\n    \"password\": \"0000000000\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/actualizar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/clientes/crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identification\": \"V26078218\",\r\n    \"name\": \"Joaquin Camacho\",\r\n    \"address\": \"Caracas, Venezuela\",\r\n    \"phoneNumber\": \"142874557\",\r\n    \"gender\": \"Masculino\",\r\n    \"birthdate\": \"1996-02-01\",\r\n    \"password\": \"1234567890\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/clientes/obtener",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes/obtener?id=V26078218",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"obtener"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "V26078218"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/clientes/desactivar",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes/desactivar?id=V26078218",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"desactivar"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "V26078218"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/clientes/credenciales",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"identification\": \"V26078218\",\r\n    \"password\": \"1234567890\",\r\n    \"newPassword\": \"9876543210\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/clientes/credenciales",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"credenciales"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/clients/eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/clientes/eliminar?id=V26078218",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"clientes",
+								"eliminar"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "V26078218"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cuentas",
+			"item": [
+				{
+					"name": "/cuentas/actualizar",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": \"V26078218\",\r\n    \"accountNumber\": \"123456\",\r\n    \"accountType\": \"Corriente\",\r\n    \"balanceAvailable\": \"3000\",\r\n    \"state\": \"Activo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cuentas/actualizar",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"actualizar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cuentas/crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"clientId\": \"V26078218\",\r\n    \"accountNumber\": \"123456\",\r\n    \"accountType\": \"Corriente\",\r\n    \"balanceAvailable\": \"3000\",\r\n    \"state\": \"Activo\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/cuentas/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cuentas/obtener",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cuentas/obtener?accountNumber=123456",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"obtener"
+							],
+							"query": [
+								{
+									"key": "accountNumber",
+									"value": "123456"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cuentas/obtener/cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cuentas/obtener/cliente?id=V26078218",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"obtener",
+								"cliente"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "V26078218"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/cuentas/eliminar",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/cuentas/eliminar?accountNumber=012345",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"cuentas",
+								"eliminar"
+							],
+							"query": [
+								{
+									"key": "accountNumber",
+									"value": "012345"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Movimientos",
+			"item": [
+				{
+					"name": "/movimientos/crear",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"accountId\": \"123456\",\r\n    \"movementType\": \"Debito\",\r\n    \"movementValue\": \"100\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/movimientos/crear",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"crear"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movimientos/obtener",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/movimientos/obtener?id=0d7fa47a-8d27-49fa-b172-dca114e871e3",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"obtener"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "0d7fa47a-8d27-49fa-b172-dca114e871e3"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/movimientos/obtener/cliente",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/movimientos/obtener/cliente?id=V26078218&page=0&size=10",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"obtener",
+								"cliente"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "V26078218"
+								},
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reportes",
+			"item": [
+				{
+					"name": "/movimientos/reportes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/movimientos/reportes?id=V26078218&startDate=2022-11-01&endDate=2022-11-30",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"movimientos",
+								"reportes"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "V26078218"
+								},
+								{
+									"key": "startDate",
+									"value": "2022-11-01"
+								},
+								{
+									"key": "endDate",
+									"value": "2022-11-30"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

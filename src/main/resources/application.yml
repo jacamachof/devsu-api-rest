@@ -1,0 +1,13 @@
+---
+spring:
+  application:
+    name: DevsuApiRest
+
+server:
+  port: 8080
+  error:
+    include-message: always
+
+devsu:
+  daily-limit: 1000
+  max-date-range: 90 # days
